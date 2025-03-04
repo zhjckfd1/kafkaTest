@@ -1,18 +1,28 @@
 spring:
+#так не работает...
+#  json.use.type.headers: false
   application:
     name: consumer
   kafka:
     bootstrap-servers: localhost:9092
     producer:
       bootstrap-servers: localhost:9092
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
     consumer:
 #      group-id: testGroup
 #      bootstrap-servers: localhost:9092
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+#        spring.json.trusted.packages: "com.example.consumer.Book"
+        spring.json.use.type.headers: false
+        spring.json.value.default.type: com.example.consumer.Book
+
 kafka:
   topic:
     name: testTopic
     group: testGroup
+
+#enable.idempotence - если true, брокер будет сохранять внутренний порядковый номер для каждой пары производителей и разделов, гарантируя, что записи не будут обрабатываться в дублирующемся виде или не по порядку.
+#Enabling idempotence requires max.in.flight.requests.per.connection to be less than or equal to 5, retries to be greater than 0 and acks set to all
