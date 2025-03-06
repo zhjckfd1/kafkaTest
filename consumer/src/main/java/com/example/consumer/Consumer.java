@@ -1,5 +1,6 @@
 package com.example.consumer;
 
+import com.example.bookstarter.Book;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 

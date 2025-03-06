@@ -1,4 +1,4 @@
-package com.example.consumer;
+package com.example.bookstarter;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;

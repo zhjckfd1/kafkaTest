@@ -17,7 +17,7 @@ spring:
       properties:
 #        spring.json.trusted.packages: "com.example.consumer.Book"
         spring.json.use.type.headers: false
-        spring.json.value.default.type: com.example.consumer.Book
+        spring.json.value.default.type: com.example.bookstarter.Book
 
 kafka:
   topic:
