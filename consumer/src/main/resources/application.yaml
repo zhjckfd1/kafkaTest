@@ -24,5 +24,11 @@ kafka:
     name: testTopic
     group: testGroup
 
+test:
+  book:
+    author: defaultAuthor
+    name: defaultName
+    price: 100
+
 #enable.idempotence - если true, брокер будет сохранять внутренний порядковый номер для каждой пары производителей и разделов, гарантируя, что записи не будут обрабатываться в дублирующемся виде или не по порядку.
 #Enabling idempotence requires max.in.flight.requests.per.connection to be less than or equal to 5, retries to be greater than 0 and acks set to all

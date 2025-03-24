@@ -28,7 +28,7 @@
 <!--    </scm>-->
     <properties>
         <java.version>21</java.version>
-        <book.starter.version>0.0.1-SNAPSHOT</book.starter.version>
+        <book.starter.version>0.0.2-SNAPSHOT</book.starter.version>
     </properties>
     <dependencies>
         <dependency>

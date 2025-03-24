@@ -52,4 +52,12 @@ public class Book {
                 '}';
     }
 
+    public void init(){
+        System.out.println("init for bean Book");
+    }
+
+    public void delete(){
+        System.out.println("delete for bean Book");
+    }
+
 }
