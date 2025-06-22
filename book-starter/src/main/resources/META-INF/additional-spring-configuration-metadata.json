@@ -1,0 +1,9 @@
+{
+  "properties": [
+    {
+      "name": "test.book.author",
+      "type": "java.lang.String",
+      "description": "Автор книги"
+    }
+  ]
+}

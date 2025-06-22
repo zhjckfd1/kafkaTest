@@ -6,7 +6,12 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 public class BookProperties {
 
     private String author;
+
+    /**
+     * Наименование книги
+     */
     private String name;
+
     private int price;
 
     public String getAuthor() {
